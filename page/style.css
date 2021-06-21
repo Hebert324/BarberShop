@@ -18,10 +18,10 @@ img {
 :root {
   --header-height: 4.5rem;
   /* colors */
-  --base-color: #a152ef;
-  --base-color-second: #d3cadd;
-  --base-color-alt: #8e24f8;
-  --title-color: #261932;
+  --base-color: #bd894b;
+  --base-color-second: #e5c697;
+  --base-color-alt: #b87b20;
+  --title-color: #30220E;
   --text-color: #757575;
   --text-color-light: #fafafa;
   --body-color: #fafafa;
@@ -91,6 +91,7 @@ h1 {
 }
 
 nav {
+  width: 100%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -107,7 +108,7 @@ nav {
 }
 
 main {
-    margin-top: var(--header-height);
+  margin-top: var(--header-height);
 }
 
 /*---HOME--------------------------------*/

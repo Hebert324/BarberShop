@@ -176,13 +176,22 @@ nav.show ul.grid {
 }
 
 /*---TOGGLE MENU--------------------------------*/
+.toggle{
+  color: var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 nav .icon-close{
   opacity: 0;
   visibility: hidden;
+
+  position: absolute;
+  right: 1.5rem;
+  /* transição */
 }
 
-nav.show .icon-close{
+nav.show div.icon-close{
   opacity: 1;
   visibility: visible;
 }

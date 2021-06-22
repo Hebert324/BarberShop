@@ -32,6 +32,10 @@ img {
 }
 
 /*---BASE--------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 1rem "DM Sans";
   color: var(--text-color);

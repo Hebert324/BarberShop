@@ -173,9 +173,16 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+nav .menu ul{
+  display: none;
+
+}
+
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
 }
 
 /*MOSTRAR MENU*/
@@ -191,11 +198,12 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: 0;
-}
 
-nav.show .menu {
   display: grid;
   place-content: center;
+}
+nav.show .menu ul{
+  display: grid;
 }
 
 nav.show ul.grid {
@@ -214,13 +222,15 @@ nav .icon-close{
   visibility: hidden;
 
   position: absolute;
+  top: -1.5rem;
   right: 1.5rem;
-  /* transição */
+  transition: 0.2s;
 }
 
 nav.show div.icon-close{
   opacity: 1;
   visibility: visible;
+  top: 1.5rem;
 }
 
 /*---HOME--------------------------------*/

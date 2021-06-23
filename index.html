@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barber Shop</title>
   <link rel="stylesheet" href="../assets/fonts/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -114,57 +115,65 @@
 
     <!-- Testimonials -->
     <section class="section" id="testimonials">
-      <div class="container grid">
+      <div class="container">
         <header>
           <h2 class="title">Depoimentos de quem já passou por aqui</h2>
         </header>
-        <div class="testimonials">
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Eu sou cliente do Barber Shop há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois
-                que comecei a frenquentar a BarberShop me sinto mais jovem e mais bonito. São profissionais incríveis e
-                qualificados.
-              </p>
-              <cite>
-                <img src="assets/photos/42.jpg" alt="Foto de Roberta Souza">
-                Roberto Souza
-              </cite>
-            </blockquote>
+        <div class="testimonials swiper-container">
+
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Eu sou cliente do Barber Shop há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois
+                  que comecei a frenquentar a BarberShop me sinto mais jovem e mais bonito. São profissionais incríveis
+                  e
+                  qualificados.
+                </p>
+                <cite>
+                  <img src="assets/photos/42.jpg" alt="Foto de Roberta Souza">
+                  Roberto Souza
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Meu amigo frenquenta a barbearia a anos e me indiciou. Minha experiência foi incrível. Adoro todos os
+                  profissionais do Barber Shop.
+                </p>
+                <cite>
+                  <img src="assets/photos/58.jpg" alt="Foto de Junior Lima">
+                  Junior Lima
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Ótima barbearia profissionaisde qualidade e moderno.
+                </p>
+                <cite>
+                  <img src="assets/photos/86.jpg" alt="Foto de José Silva">
+                  José Silva
+                </cite>
+              </blockquote>
+            </div>
           </div>
 
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Meu amigo frenquenta a barbearia a anos e me indiciou. Minha experiência foi incrível. Adoro todos os profissionais do Barber Shop.
-              </p>
-              <cite>
-                <img src="assets/photos/58.jpg" alt="Foto de Junior Lima">
-                Junior Lima
-              </cite>
-            </blockquote>
-          </div>
-
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Ótima barbearia profissionaisde qualidade e moderno.
-              </p>
-              <cite>
-                <img src="assets/photos/86.jpg" alt="Foto de José Silva">
-                José Silva
-              </cite>
-            </blockquote>
-          </div>
+          <div class="swiper-pagination"></div>
 
         </div>
       </div>
     </section>
 
+    <div class="divider-2"></div>
+
   </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 

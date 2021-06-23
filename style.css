@@ -353,3 +353,18 @@ nav.show div.icon-close{
   margin-left: 3.5rem;
   margin-right: 3.5rem;
 }
+
+/*---TESTIMONIALS--------------------------------*/
+
+#testimonials {
+  background: white;
+}
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p span {
+  
+}

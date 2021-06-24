@@ -29,6 +29,9 @@ img {
   --text-color: #757575;
   --text-color-light: #fafafa;
   --body-color: #fafafa;
+
+  /* Fonts */
+  --title-font-size: 1.875rem;
 }
 
 /*---BASE--------------------------------*/
@@ -44,7 +47,7 @@ body {
 }
 
 .title {
-  font: 700 1.875rem "Poppins";
+  font: 700 var(--title-font-size) "Poppins";
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -497,4 +500,11 @@ footer .social a:hover {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+/*---RESPONSIVO--------------------------------*/
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.2rem;
+  }
 }

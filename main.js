@@ -33,7 +33,6 @@ window.addEventListener('scroll',() => {
 })
 
 // Testimonials slider
-
 const swiper = new Swiper('.swiper-container', {
     slidesPerView:1,
     pagination: {
@@ -44,7 +43,6 @@ const swiper = new Swiper('.swiper-container', {
 })
 
 //Scroll Review: mostrar elementos quando der um scroll na pagina
-
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -59,3 +57,14 @@ scrollReveal.reveal(`
 #testimonials header, #testimonials .testimonials,
 #contact .text, #contact .links
 `, { interval: 100 })
+
+// Botão voltar para o topo
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 760){
+        backToTopButton.classList.add('show')
+    }
+    else {
+        backToTopButton.classList.remove('show')
+    }
+})

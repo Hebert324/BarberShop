@@ -19,18 +19,18 @@ for(const link of links) {
 }
 
 //mudar o header da pagina colocando sombra ne quando der o scroll
-const header = document.querySelector('#header')
-//offsetHeight deslocamento da altura.
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+    const header = document.querySelector('#header')
+    //offsetHeight deslocamento da altura.
+    const navHeight = header.offsetHeight
 
-window.addEventListener('scroll',() => {
     //aqui ele vai verificar se o scroll tem a altura maior ou igual a do header.
     if(window.scrollY >= navHeight){
         header.classList.add('scroll')
     } else{
         header.classList.remove('scroll')
     }
-})
+}
 
 // Testimonials slider
 const swiper = new Swiper('.swiper-container', {
@@ -55,16 +55,24 @@ scrollReveal.reveal(`
 #about .image, #about .text,
 #services header, #services card,
 #testimonials header, #testimonials .testimonials,
-#contact .text, #contact .links
+#contact .text, #contact .links,
+footer .brand, footer .social,
 `, { interval: 100 })
 
 // Botão voltar para o topo
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', () => {
+function backToTop() {
+    const backToTopButton = document.querySelector('.back-to-top')
+
     if(window.scrollY >= 760){
         backToTopButton.classList.add('show')
     }
     else {
         backToTopButton.classList.remove('show')
     }
+}
+
+// when scroll
+window.addEventListener('scroll', () => {
+    changeHeaderWhenScroll()
+    backToTop()
 })

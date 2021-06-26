@@ -19,11 +19,11 @@ for(const link of links) {
 }
 
 //mudar o header da pagina colocando sombra ne quando der o scroll
-function changeHeaderWhenScroll() {
-    const header = document.querySelector('#header')
-    //offsetHeight deslocamento da altura.
-    const navHeight = header.offsetHeight
+const header = document.querySelector('#header')
+//offsetHeight deslocamento da altura.
+const navHeight = header.offsetHeight
 
+function changeHeaderWhenScroll() {
     //aqui ele vai verificar se o scroll tem a altura maior ou igual a do header.
     if(window.scrollY >= navHeight){
         header.classList.add('scroll')
@@ -68,8 +68,9 @@ const scrollReveal = ScrollReveal({
   )
 
 // Botão voltar para o topo
+const backToTopButton = document.querySelector('.back-to-top')
+
 function backToTop() {
-    const backToTopButton = document.querySelector('.back-to-top')
 
     if(window.scrollY >= 760){
         backToTopButton.classList.add('show')
@@ -79,8 +80,31 @@ function backToTop() {
     }
 }
 
+// Menu ativo conforme a seção visível na página
+const sections = document.querySelectorAll('main section[id]')
+function activateMenuAtCurrentSection() {
+    const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+
+    for(const section of sections) {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.offsetHeight
+        const sectionId = section.getAttribute('id')
+
+        const checkpointStart = checkpoint >= sectionTop
+        const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+        if(checkpointStart && checkpointEnd) {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.add('active')
+
+        } else {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    }
+}
+
 // when scroll
 window.addEventListener('scroll', () => {
     changeHeaderWhenScroll()
     backToTop()
+    activateMenuAtCurrentSection()
 })

@@ -1,7 +1,7 @@
 <h1 align="center">Barber Shop</h1>
 
 <img alt="gif-pc" src="https://github.com/Hebert324/BarberShop/blob/main/gifs/barbershop-pc.gif">
-<img alt="gif-cell" src="https://github.com/Hebert324/BarberShop/blob/main/gifs/barbershop-cell.gif">
+<img align="center" alt="gif-cell" src="https://github.com/Hebert324/BarberShop/blob/main/gifs/barbershop-cell.gif">
 
 ## Sobre o projeto:
 

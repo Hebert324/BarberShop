@@ -420,7 +420,7 @@ nav.show div.icon-close {
 
 /* Swiper */
 
-.swiper-pagination {
+.swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal {
   bottom: 0;
 }
 

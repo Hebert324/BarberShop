@@ -421,15 +421,15 @@ nav.show div.icon-close {
 /* Swiper */
 
 .swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal {
-  bottom: 0;
+  bottom: none;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 0;
+  bottom: none;
 }
 
 .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 0;
+  bottom: none;
 }
 
 .swiper-slide {

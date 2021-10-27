@@ -420,16 +420,8 @@ nav.show div.icon-close {
 
 /* Swiper */
 
-.swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal {
-  bottom: none;
-}
-
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
   bottom: auto;
-}
-
-.swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: none;
 }
 
 .swiper-slide {

@@ -419,6 +419,11 @@ nav.show div.icon-close {
 }
 
 /* Swiper */
+
+.swiper-pagination {
+  bottom: 0;
+}
+
 .swiper-slide {
   padding: 4rem 1rem;
 }

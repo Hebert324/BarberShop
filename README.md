@@ -18,6 +18,10 @@ BarberShop é uma página institucional no formato One Page, responsiva, para us
 
 ### Acesse o projeto aqui: <a href="https://barber-shopweb.netlify.app">Barber Shop</a>
 
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+
 ---
 
-Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rc/) juntamente a [Rocketseat](https://app.rocketseat.com.br/dashboard) :wave: 
+Desenvolvido por [Hebert Rocha](https://www.linkedin.com/in/hebert-rc/) juntamente a [Rocketseat](https://app.rocketseat.com.br/dashboard) :wave:
